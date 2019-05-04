@@ -10,9 +10,9 @@ steps:
 
 - name: publish  
   image: plugins/gh-pages
-  remote: git@github.com:ok-production/ok-production.github.io.git
   settings:
     pages_directory: public/
-    remote: git@github.com:ok-production/ok-production.github.io.git
-    ssh_key:
-      from_secret: github_ssh_key
+    username:
+      from_secret: github_username
+    password:
+      from_secret: github_password
