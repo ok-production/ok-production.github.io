@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://ok-production.github.io/"
 languageCode = "en-us"
 title = "OK-Production: Corporate Videos in Vienna"
 theme = "hugo-uilite"
