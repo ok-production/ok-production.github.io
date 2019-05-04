@@ -14,5 +14,6 @@ steps:
     DRONE_REMOTE_URL: "git@github.com:ok-production/ok-production.github.io.git"
   settings:
     pages_directory: public/
+    username: omtx
     ssh_key:
       from_secret: github_ssh_key
