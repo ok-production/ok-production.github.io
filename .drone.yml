@@ -12,6 +12,7 @@ steps:
   image: alpine
   commands:
    - ls -lh
+   - ls -lh themes
    - ls -lh public
 
 - name: publish  
