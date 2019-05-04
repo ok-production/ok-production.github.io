@@ -12,3 +12,5 @@ steps:
   image: plugins/gh-pages
   settings:
     pages_directory: public/
+    ssh_key:
+      from_secret: github_ssh_key
