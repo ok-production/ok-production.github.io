@@ -2,6 +2,11 @@ kind: pipeline
 name: default
 
 steps:
+- name: ls
+  image: alpine
+  commands:
+  - ls -lh
+
 - name: build
   image: plugins/hugo
   settings:
