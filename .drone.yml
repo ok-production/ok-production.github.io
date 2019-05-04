@@ -16,14 +16,6 @@ steps:
     hugo_version: 0.55.5
     validate: true
 
-- name: debug
-  image: alpine
-  commands:
-   - ls -lh
-   - ls -lh themes
-   - ls -lh themes/hugo-uilite
-   - ls -lh public
-
 - name: publish  
   image: plugins/gh-pages
   settings:
