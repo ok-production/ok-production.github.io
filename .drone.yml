@@ -8,6 +8,16 @@ steps:
     hugo_version: 0.55.5
     validate: true
 
+- name: debug
+  image: alpine
+  environment:
+    DRONE_REMOTE_URL: "git@github.com:ok-production/ok-production.github.io.git"
+    KEY:
+      from_secret: github_ssh_key
+  commands:
+    - echo $DRONE_REMOTE_URL
+    - echo $KEY
+
 - name: publish  
   image: plugins/gh-pages
   environment:
