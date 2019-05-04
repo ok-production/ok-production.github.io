@@ -12,6 +12,7 @@ steps:
   image: plugins/gh-pages
   settings:
     pages_directory: public/
+    target_branch: master
     username:
       from_secret: github_username
     password:
