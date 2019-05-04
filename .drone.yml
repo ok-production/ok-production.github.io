@@ -10,8 +10,8 @@ steps:
 
 - name: debug
   image: alpine
+  remote_url: git@github.com:ok-production/ok-production.github.io.git
   environment:
-    DRONE_REMOTE_URL: "git@github.com:ok-production/ok-production.github.io.git"
     KEY:
       from_secret: github_ssh_key
   commands:
