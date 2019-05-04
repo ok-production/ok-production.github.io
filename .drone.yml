@@ -1,16 +1,9 @@
 kind: pipeline
 name: default
 
-steps:
-- name: ls
-  image: alpine
-  commands:
-  - ls -lh
-
 - name: build
   image: plugins/hugo
   settings:
-    content: .
     hugo_version: 0.55.5
     validate: true
 
