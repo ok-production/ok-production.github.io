@@ -10,9 +10,9 @@ steps:
 
 - name: publish  
   image: plugins/gh-pages
+  environment:
+    - DRONE_REMOTE_URL="git@github.com:ok-production/ok-production.github.io.git"
   settings:
     pages_directory: public/
     ssh_key:
       from_secret: github_ssh_key
-    environment:
-      - DRONE_REMOTE_URL="git@github.com:ok-production/ok-production.github.io.git"
