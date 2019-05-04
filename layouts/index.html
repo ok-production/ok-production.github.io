@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+{{ partial "sidebar.html" . }}
+
+<div class="main-content">
+	{{ if .Site.Data.recent }}{{ partial "recent.html" . }}{{ end }}
+	{{ if .Site.Data.steps }}{{ partial "steps.html" . }}{{ end }}
+	{{ if .Site.Data.services }}{{ partial "services.html" . }}{{ end }}
+	{{ if .Site.Data.trusted }}{{ partial "trusted.html" . }}{{ end }}
+</div>
+
+<div class="main-content">
+	{{ partial "contact.html" . }}		
+</div>
+
+{{ partial "footer-scripts.html" . }}
+	

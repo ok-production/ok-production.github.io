@@ -1,0 +1,15 @@
+{
+	"title" : "Services",
+	"services" : [
+		{
+			"icon" : "star",
+			"title" : "Brand video",
+			"description" : "For a fixed price of €1000."
+		},
+		{
+			"icon" : "microphone",
+			"title" : "Event video",
+			"description" : "The same fixed price of €1000 plus expenditures like tickets."
+		}
+	]
+}

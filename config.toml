@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "OK-Production: Corporate Videos in Vienna"
+theme = "hugo-uilite"

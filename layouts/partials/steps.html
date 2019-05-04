@@ -1,0 +1,18 @@
+{{ $steps := .Site.Data.steps }}
+
+<section id="steps" class="green">
+  <h2 class="heading">{{ $steps.title }}</h2>
+  <div id="timeline">
+    {{ range $index, $element := $steps.steps }}
+    <div class="timeline-item clearfix">
+      <div class="timeline-icon"></div>
+      
+      <div class="timeline-content {{ if eq (mod $index 2) 0 }} right {{ end }}">
+        <h6 class="h3 my-2">{{ $element.stage }}</h6>
+        <p class="">{{ $element.description }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+</section>

@@ -1,0 +1,18 @@
+{{ $trusted := .Site.Data.trusted }}
+
+<section class="pink">
+  <h2 class="heading">{{ $trusted.title }}</h2>
+
+  <div class="row">
+
+    {{ range $index, $element := $trusted.trusted }}
+
+    <div class="col-12 col-lg-6 col-md-6 mb-3 bs">
+      <p>
+        <img src="{{ .Site.BaseURL }}images/{{ $element.logo }}" width="270" alt="">
+      </p>
+    </div>
+
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,9 @@
+{{ $config := .Site.Data.config }}
+<section id="contact">
+      <h2 class="heading mb-3">Contact</h2>
+
+      <div class="text-success my-3 bs">
+        <p class="text-muted bs">Email: {{ $config.email }}</p>
+        <p class="text-muted bs">Phone: {{ $config.phone }}</p>
+      </div>
+</section>

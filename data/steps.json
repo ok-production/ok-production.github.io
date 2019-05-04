@@ -1,0 +1,25 @@
+{
+	"title" : "Steps to your video",
+	"steps" : [
+		{
+			"stage" : "Idea",
+			"description" : "An idea and a short description is all that is needed from you."
+		},
+		{
+			"stage" : "Scenario",
+			"description" : "I compose a script for the video which we finilize together."
+		},
+		{
+			"stage" : "Footages",
+			"description" : "I shoot all the interviews and video materials. Voice is recorded using studio-grade mics."
+		},
+		{
+			"stage" : "Music",
+			"description" : "I select the background music which fits the video style."
+		},
+		{
+			"stage" : "Editing",
+			"description" : "I cut and trim the video into a final product, involving a feedback loop with you."
+		}
+	]
+}
