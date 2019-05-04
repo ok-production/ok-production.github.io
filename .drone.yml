@@ -2,13 +2,13 @@ kind: pipeline
 name: default
 
 steps:
-- name: publish  
-  image: plugins/gh-pages
-  settings:
-    pages_directory: public/
-
 - name: build
   image: plugins/hugo
   settings:
     hugo_version: 0.55.5
     validate: true
+
+- name: publish  
+  image: plugins/gh-pages
+  settings:
+    pages_directory: public/
