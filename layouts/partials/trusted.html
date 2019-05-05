@@ -8,9 +8,7 @@
     {{ range $index, $element := $trusted.trusted }}
 
     <div class="col-12 col-lg-6 col-md-6 mb-3 bs">
-      <p>
-        <img src="{{ .Site.BaseURL }}images/{{ $element.logo }}" width="270" alt="">
-      </p>
+      <img class="img-fluid" src="{{ .Site.BaseURL }}images/{{ $element.logo }}" width="270" alt="">
     </div>
 
     {{ end }}
